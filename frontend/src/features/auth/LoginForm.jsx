@@ -67,7 +67,7 @@ export default function LoginForm({ onLoginSuccess }) {
             fontSize: '14px',
             outline: 'none',
           }}
-          placeholder="admin_pontianak"
+          placeholder="masukan username"
         />
       </div>
       <div style={{ marginBottom: '24px' }}>
@@ -96,7 +96,7 @@ export default function LoginForm({ onLoginSuccess }) {
             fontSize: '14px',
             outline: 'none',
           }}
-          placeholder="password123"
+          placeholder="masukan password"
         />
       </div>
       <button

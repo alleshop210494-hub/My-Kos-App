@@ -1,4 +1,3 @@
-// src/layouts/AdminLayout.jsx
 import React, { useState } from 'react';
 
 export default function AdminLayout({ children, activeTab, setActiveTab, onLogout }) {

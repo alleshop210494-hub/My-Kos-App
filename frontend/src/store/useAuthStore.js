@@ -2,8 +2,17 @@ import { useState } from 'react';
 
 export const useAuthStore = () => {
   const [user, setUser] = useState(() => {
-    const savedUser = localStorage.getItem('kos_user');
-    return savedUser ? JSON.parse(savedUser) : null;
+    try {
+      const savedUser = localStorage.getItem('kos_user');
+      if (!savedUser || savedUser === 'undefined' || savedUser === 'null') {
+        return null;
+      }
+      return JSON.parse(savedUser);
+    } catch (error) {
+      console.error('Failed to parse user from localStorage:', error);
+      localStorage.removeItem('kos_user');
+      return null;
+    }
   });
 
   const login = (userData) => {

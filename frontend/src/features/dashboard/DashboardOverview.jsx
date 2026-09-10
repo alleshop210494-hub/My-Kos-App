@@ -1,4 +1,3 @@
-// src/features/dashboard/DashboardOverview.jsx
 import React from 'react';
 import { formatRupiah } from '../../utils/formatters';
 
