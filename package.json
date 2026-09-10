@@ -1,0 +1,18 @@
+{
+  "name": "kos-pontianak-app",
+  "version": "1.0.0",
+  "description": "Aplikasi Manajemen Kos-kosan di Pontianak - Decoupled Architecture",
+  "main": "My-Kos-App/backend/src/server.js",
+  "scripts": {
+    "install:all": "npm install && cd My-Kos-App/backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd My-Kos-App/backend && npm run dev",
+    "dev:frontend": "cd My-Kos-App/frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
